@@ -12,7 +12,7 @@ public class Main {
         for (int i = 0; i <= 9; i++) {
             FullTimeStudent objFullTimeStudent = new FullTimeStudent(studentNames[i], (int) (Math.random() * 101), (int) (Math.random() * 101));
             for (int j = 0; j < 15; j++) {
-                objFullTimeStudent.addQuizScore(j, (int) (Math.random() * 16));
+                objFullTimeStudent.addQuizScore(j, (int) (Math.random() * 16)); 
             }
             session.addStudent(objFullTimeStudent, i);
         }
@@ -20,7 +20,7 @@ public class Main {
         for (int i = 0; i < 10; i++) {
             PartTimeStudent objPartTimeStudent = new PartTimeStudent(studentNames[i + 10]);
             for (int j = 0; j < 15; j++) {
-                objPartTimeStudent.addQuizScore(j, (int) (Math.random() * 16)); // Range: 0 to 15
+                objPartTimeStudent.addQuizScore(j, (int) (Math.random() * 16)); 
             }
             session.addStudent(objPartTimeStudent, i + 10);
         }
