@@ -1,0 +1,14 @@
+.button-calculator {
+    -fx-min-width: 75px;
+    -fx-min-height: 57px;
+    -fx-font-family: "Arial Bold";
+    -fx-font-size: 20.0;
+}
+
+.button-calculator:hover {
+    -fx-background-color: #e0e0e0;
+}
+
+.button-calculator:pressed {
+    -fx-background-color: #d0d0d0;
+}
