@@ -1,0 +1,37 @@
+Title: Library Management System
+
+Exercise Description:
+
+You are tasked with implementing a Library Management System in Java. The system should allow users to perform various operations such as adding new books, removing books, searching for books, and displaying all available books. Additionally, users should be able to check out and return books.
+
+Requirements:
+
+Implement a Book class with the following attributes:
+Title
+Author
+Genre
+ISBN
+Availability (boolean indicating whether the book is available for checkout or not)
+
+Implement a Library class which manages the collection of books. This class should have methods for:
+Adding a new book to the library
+Removing a book from the library
+Searching for a book by title, author, or genre
+Displaying all available books
+Checking out a book (marking it as unavailable)
+Returning a book (marking it as available again)
+
+Create a main class (e.g., LibraryApp) to demonstrate the functionality of your Library Management System. 
+In the main method, create an instance of the Library class and perform various operations such as adding books, searching for books, checking out books, and returning books.
+
+Guidelines:
+
+Compilable and working Java program (20 points)
+Use proper object-oriented programming principles. (20 points)
+Ensure error handling for cases such as trying to check out a book that is not available or trying to remove a book that doesn't exist. (20 points)
+Make the code modular and well-documented. (20 points)
+Test your code thoroughly to ensure that all functionalities work as expected.  (20 points)
+
+Bonus (Optional, 10 extra points):
+Implement serialization/deserialization to save and load the library data from a file.
+Add additional features such as tracking the number of times each book has been borrowed, sorting books by different criteria, or implementing a user authentication system.
