@@ -1,0 +1,26 @@
+<BookShelf>
+     <Book>
+        <title>Shantaram</title>
+        <publishedYear>2003</publishedYear>
+        <numberOfPages>936</numberOfPages>
+        <authors>
+           <author>Gregory David Roberts</author>
+        </authors>
+    </Book>
+    <Book>
+        <title>Pride and Prejudice</title>
+        <publishedYear>1813</publishedYear>
+        <numberOfPages>279</numberOfPages>
+        <authors>
+            <author>Jane Austen</author>
+        </authors>
+    </Book>
+    <Book>
+        <title>The Lord of the Rings</title>
+        <publishedYear>1954</publishedYear>
+        <numberOfPages>1178</numberOfPages>
+        <authors>
+            <author>J.R.R. Tolkien</author>
+        </authors>
+    </Book>
+</BookShelf>

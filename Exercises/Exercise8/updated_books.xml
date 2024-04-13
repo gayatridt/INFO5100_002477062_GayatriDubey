@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BookShelf>
+    <Book>
+        <title>Shantaram</title>
+        <publishedYear>2003</publishedYear>
+        <numberOfPages>936</numberOfPages>
+        <author>Gregory David Roberts</author>
+    </Book>
+    <Book>
+        <title>Pride and Prejudice</title>
+        <publishedYear>1813</publishedYear>
+        <numberOfPages>279</numberOfPages>
+        <author>Jane Austen</author>
+    </Book>
+    <Book>
+        <title>The Lord of the Rings</title>
+        <publishedYear>1954</publishedYear>
+        <numberOfPages>1178</numberOfPages>
+        <author>J.R.R. Tolkien</author>
+    </Book>
+    <Book>
+        <title>The Notebook</title>
+        <publishedYear>1996</publishedYear>
+        <numberOfPages>Varies by edition, typically around 224 pages</numberOfPages>
+        <author>Nicholas Sparks</author>
+    </Book>
+</BookShelf>

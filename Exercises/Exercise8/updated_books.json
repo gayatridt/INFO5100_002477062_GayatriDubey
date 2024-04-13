@@ -1,0 +1,38 @@
+{
+  "BookShelf": {
+    "Book": [
+      {
+        "title": "Shantaram",
+        "publishedYear": "2003",
+        "numberOfPages": "936",
+        "authors": [
+          "Gregory David Roberts"
+        ]
+      },
+      {
+        "title": "Pride and Prejudice",
+        "publishedYear": "1813",
+        "numberOfPages": "279",
+        "authors": [
+          "Jane Austen"
+        ]
+      },
+      {
+        "title": "The Lord of the Rings",
+        "publishedYear": "1954",
+        "numberOfPages": "1178",
+        "authors": [
+          "J.R.R. Tolkien"
+        ]
+      },
+      {
+        "title": "The Notebook",
+        "publishedYear": "1996",
+        "numberOfPages": "Varies by edition, typically around 224 pages",
+        "authors": [
+          "Nicholas Sparks"
+        ]
+      }
+    ]
+  }
+}
