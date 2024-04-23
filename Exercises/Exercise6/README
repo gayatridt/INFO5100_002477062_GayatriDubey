@@ -1,0 +1,7 @@
+Create two objects - Alice and Bob
+Demonstrate symmetric encryption and decryption of message sent between Alice and Bob
+Use AES-256 encryption with AES/GCM/NoPadding cipher
+E.g.: Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
+Demonstrate asymmetric encryption and decryption of message sent between Alice and Bob
+Use RSA-2048 encryption RSA/ECB/PKCS1Padding
+Demonstrate signing a message and validating the signature using RSA-2048 keys between Alice and Bob
