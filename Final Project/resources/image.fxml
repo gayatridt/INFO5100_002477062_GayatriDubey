@@ -1,1 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
 
+<?import java.lang.String?>
+<?import java.net.URL?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.javafinalproj.MainController"
+            style="-fx-padding: 0 0 20 0;" styleClass="center-background">
+
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+
+    <top>
+        <VBox spacing="2" styleClass="top-background">
+            <Region VBox.vgrow="ALWAYS" />
+            <Region VBox.vgrow="ALWAYS" />
+
+            <!-- Upload section -->
+            <HBox spacing="5" alignment="CENTER">
+                <Button text="Upload Images" onAction="#uploadImage" styleClass="upload-button"/>
+            </HBox>
+            <HBox maxHeight="2">
+                <Label text="Select image to process from the list:" styleClass="control-label"/>
+            </HBox>
+
+            <!-- ListView to display uploaded images -->
+            <ListView fx:id="imageListView" maxHeight="120" minHeight="100" styleClass="listview-background"/>
+        </VBox>
+    </top>
+
+    <center>
+        <VBox spacing="5" alignment="CENTER" styleClass="center-background">
+            <VBox spacing="2" alignment="CENTER" maxHeight="300">
+                <!-- Image display section -->
+                <VBox spacing="2" alignment="CENTER">
+                    <Label text="Image Display" styleClass="section-heading"/>
+                    <ImageView fx:id="selectedImageView" fitWidth="300" fitHeight="200" preserveRatio="true" styleClass="selected-image-view"/>
+                </VBox>
+
+                <!-- Properties and message label section -->
+                <VBox spacing="2" alignment="CENTER" minHeight="90">
+                    <Label fx:id="propertiesLabel" minHeight="80" text="Image Properties Here" styleClass="properties-label"/>
+                    <Label fx:id="msgLabel" text="" styleClass="message-label"/>
+                </VBox>
+            </VBox>
+        </VBox>
+    </center>
+
+    <bottom>
+        <VBox spacing="20" alignment="CENTER" styleClass="center-background">
+            <!-- Image conversion section -->
+            <VBox spacing="10" alignment="CENTER">
+                <Label text="Image Conversion" styleClass="section-heading"/>
+                <HBox spacing="15" alignment="CENTER">
+                    <Label text="File Type:" styleClass="control-label"/>
+                    <ChoiceBox fx:id="formatChoiceBox" styleClass="choice-box">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="PNG"/>
+                                <String fx:value="JPG"/>
+                                <String fx:value="GIF"/>
+                                <String fx:value="BMP"/>
+                            </FXCollections>
+                        </items>
+                    </ChoiceBox>
+                    <Button text="Convert" onAction="#convertImage" styleClass="convert-button"/>
+                    <Button text="Download Converted Image" onAction="#downloadImage" styleClass="download-button"/>
+                </HBox>
+            </VBox>
+
+            <!-- Filter section -->
+            <VBox spacing="10" alignment="CENTER">
+                <Label text="Image Filter" styleClass="section-heading"/>
+                <HBox spacing="10" alignment="CENTER">
+                    <Label text="Brightness:" styleClass="control-label"/>
+                    <Slider fx:id="brightnessSlider" min="-1.0" max="1.0" value="0.0"/>
+                    <Label text="Contrast:" styleClass="control-label"/>
+                    <Slider fx:id="contrastSlider" min="-1.0" max="1.0" value="0.0"/>
+                    <Label text="Saturation:" styleClass="control-label"/>
+                    <Slider fx:id="saturationSlider" min="-1.0" max="1.0" value="0.0"/>
+                </HBox>
+            </VBox>
+
+            <VBox spacing="5" alignment="CENTER">
+                <HBox spacing="15" alignment="CENTER">
+                    <Label text="Filter:" styleClass="control-label"/>
+                    <ChoiceBox fx:id="filterChoiceBox" styleClass="choice-box">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="None"/>
+                                <String fx:value="Black and White"/>
+                                <String fx:value="Sepia"/>
+                            </FXCollections>
+                        </items>
+                    </ChoiceBox>
+                    <Button text="Apply Filters" onAction="#applyFilters" styleClass="apply-button"/>
+                    <Button text="Download Filtered Image" onAction="#downloadFilteredImage" styleClass="download-button"/>
+                </HBox>
+            </VBox>
+        </VBox>
+    </bottom>
+</BorderPane>
